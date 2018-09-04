@@ -1,0 +1,17 @@
+language: java
+jdk:
+- openjdk8
+- oraclejdk9
+notifications:
+  email:
+    recipients:
+    - one@example.com
+    on_success: always
+    on_failure: never
+deploy:
+  provider: heroku
+  api_key:
+    secure: Tsywjtm58Vge96cwY8v2Igx4HfvPO4zTL0/48I28XOx9z7S1vBrk6pSc9qKVfHnovTr5wV3P7zbu5eGBXtOcwj8IK0IzZoDhZNuS7x+t2Tguo8CFyVeWbYWnyn7J6b//dOqBeDw5RzSgNi8dAxOVU5N1XYyehc/R3fT7qzP5WwMsLnhoBsTuNosI+1yE4Y8f7vTR2ZC36OSBdsVv7fmUxgpn1MHUzwo/olPu7QkKgUFcLK/qrAQXMdL3HErpub8P2XGgx6u9Tkv8DncQNR7LKIvKaV7oW6TvBQYcHhH6idXcoQnLV+LDE0n5xrEcXQi0iT+pNIRey4LudHuTdSHepNKnsy34TlEDph6NwZ9U3UeMnM6w+jx/Sm3Hc0yOuThLOqHs65R8iNzyypA7TDnLFpJRZMq53JYBmtZWQYmO6cUkBPorIPaHRP6R0NZozS1YEPYO9Qc+qI3j0K4vYIpwtwSC+/X3WHk3Jy1rQKPDbQnlec007voMZnNRCbMQ1IKl01cX9xK1SIcJnzijPk1l1SX1CaLJxrGG3jEAY4PA6fJjqYv0K4FxSbFpGloZLlTc0J48fbS1tgPjhCqEMQqbj/kt8M/00IoB3wokw/tDGdSGOc7zdTLwgoNubNmDM+3Fi5OdNFLEWihMQaCPA9oEHtRKmeoxj5/5axRnw21GZr0=
+  app: bye-java
+  on:
+    repo: ernestodtv/bye-java
